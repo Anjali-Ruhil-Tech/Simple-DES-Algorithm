@@ -21,6 +21,79 @@ This project implements the Simplified Data Encryption Standard (S-DES) algorith
 
 ---
 
+ ## Key Generation Process
+
+The program follows the standard S-DES key scheduling algorithm:
+
+10-bit Input Key
+        │
+      Apply P10
+        │
+Split into Left & Right Halves
+        │
+      LS-1
+        │
+      Apply P8
+        │
+     Generate K1
+        │
+      LS-2
+        │
+      Apply P8
+        │
+     Generate K2
+     
+  ---
+
+  
+  ## Operation Flow
+
+
+                 Start
+                   │
+                   ▼
+      Enter 10-bit Binary Key
+                   │
+                   ▼
+          Apply P10 Permutation
+                   │
+                   ▼
+     Split into Two 5-bit Halves
+        ┌──────────┴──────────┐
+        │                     │
+        ▼                     ▼
+   Left Half             Right Half
+        │                     │
+        └──────────┬──────────┘
+                   ▼
+        Perform LS-1 (Left Shift)
+                   │
+                   ▼
+      Combine Both Shifted Halves
+                   │
+                   ▼
+          Apply P8 Permutation
+                   │
+                   ▼
+          Generate Key 1 (K1)
+                   │
+                   ▼
+      Perform LS-2 on LS-1 Result
+                   │
+                   ▼
+      Combine Both Shifted Halves
+                   │
+                   ▼
+          Apply P8 Permutation
+                   │
+                   ▼
+          Generate Key 2 (K2)
+                   │
+                   ▼
+                  End
+
+---
+
 ## Technologies Used
 
 - C
@@ -72,3 +145,7 @@ Recovered Plaintext : 10101010
 ## Author
 
 Anjali Ruhil
+
+B.Tech – Network Engineering and Security
+
+Delhi Skill and Entrepreneurship University (DSEU)
