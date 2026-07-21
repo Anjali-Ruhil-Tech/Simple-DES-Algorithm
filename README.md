@@ -64,7 +64,7 @@ Recovered Plaintext : 10101010
 
 - Understand symmetric encryption
 - Learn Feistel network concepts
-- Practice bit manipulation in C++
+- Practice bit manipulation in C
 - Explore cryptographic permutations
 
 ---
