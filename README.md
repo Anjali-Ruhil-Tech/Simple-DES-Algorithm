@@ -145,5 +145,7 @@ Recovered Plaintext : 10101010
 ## Author
 
 Anjali Ruhil
+
 B.Tech – Network Engineering and Security
+
 Delhi Skill and Entrepreneurship University (DSEU)
