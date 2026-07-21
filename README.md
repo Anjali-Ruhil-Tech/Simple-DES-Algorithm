@@ -38,7 +38,7 @@ examples/
 
 ## How to Compile
 
-g++ src/*.cpp -o sdes
+g++ src/*.c -o sdes
 
 ---
 
